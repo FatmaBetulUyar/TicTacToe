@@ -2,6 +2,9 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+   background-color: aquamarine;
+   color: #1D267D;
+   font-family: 'Courier New', Courier, monospace;
   }
 
   .container{
@@ -13,6 +16,7 @@ body, html {
 }
 .header{
     font-size: 55px;
+    color: #1D267D;
 }
 .header , .footer{
     display: flex;
@@ -21,17 +25,52 @@ body, html {
     justify-content: center;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+   
+}
+.header > img{
+    width: 5%;
+    height: auto;
+    margin-right: 1%;
+    display: inline-block;
+    background: #BEADFA;
+    padding: 6px;
+    border-radius: 6px;
+}
+.footer{
+    margin-top: 45px;
+}
+.header > p{
+border: none;
+background: #BEADFA;
+color: #1D267D !important;
+font-weight: 400;
+padding: 10px;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}
+p:hover{
+    color: #1D267D !important;
+    font-weight: bold !important;
+    letter-spacing: 3px;
+    background: #BEADFA;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
 }
 .turnInformation{
     height: 15%;
+    margin: 15px 0;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
 }
 .content, .turnInformation{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 20px;
-    font-weight: bold;
-    
+
 }
 .board{
     height: auto;
@@ -77,16 +116,31 @@ body, html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+}
+.scoreX, .scoreO{
+    background-color: #BEADFA;
+    width: 20%;
+    height: 50%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 button{
     width: 200px;
     height: 40px;
     border: none;
-    background-color: #4ECDC4;
+    border-radius: 6px;
+    background-color: aquamarine;
     color: white;
+    color: #1D267D;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: 20px 0;
     width: var(--s);
      cursor: pointer;
      transition: .3s;
@@ -99,4 +153,7 @@ button{
 button:hover{
     outline: var(--b) solid var(--c);
     outline-offset: var(--g);
+    font-size: large;
+    
 }
+
