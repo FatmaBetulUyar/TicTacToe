@@ -35,6 +35,10 @@ body, html {
     background: #BEADFA;
     padding: 6px;
     border-radius: 6px;
+    transition: width 2s, height 2s, transform 2s;
+}
+img:hover{
+    transform: rotate(180deg);
 }
 .footer{
     margin-top: 45px;
@@ -157,3 +161,14 @@ button:hover{
     
 }
 
+.transitionTest > div{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+}
+.transitionTest > div:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
