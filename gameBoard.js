@@ -110,12 +110,12 @@ document.addEventListener("DOMContentLoaded", function () {
           winner = "X";
         }
         if (!checkBoardCells) {
-          winner = "No Winner";
-          boardCells.forEach((element) => {
-            element.style.backgroundColor = "lightgray";
-            element.style.pointerEvents = "none";
-          });
+          winner = "No";
         }
+        boardCells.forEach((element) => {
+          element.style.backgroundColor = "lightgray";
+          element.style.pointerEvents = "none";
+        });
         turnInformation.textContent = winner + " Won";
         turnInformation.style.fontWeight = "bold";
       }
